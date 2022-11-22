@@ -1,10 +1,4 @@
 <?php
-/**
- * User: TheCodeholic
- * Date: 7/7/2020
- * Time: 9:57 AM
- */
-
 
 use app\controllers\AboutController;
 use app\controllers\SiteController;
@@ -24,7 +18,7 @@ $config = [
 
 $app = new Application(dirname(__DIR__), $config);
 
-$app->on(Application::EVENT_BEFORE_REQUEST, function(){
+$app->on(Application::EVENT_BEFORE_REQUEST, function () {
     // echo "Before request from second installation";
 });
 
